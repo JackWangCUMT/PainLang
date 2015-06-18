@@ -3,12 +3,12 @@ PainLanguage is a dynamic scripting language written in .NET
 
 Main features:
  + expressions evalution
+ + classes (at this moment without inheritance) 
+ + methods (user defined and built-in)
  + .NET version independent:
    + .NET 2.0 or higher
    + Silverlight 2.0 or higher
    + .NET CF / .NET core / .NET micro framework
- + classes (at this moment without inheritance) 
- + methods (user defined and built-in)
  + .NET interoperability :
    + usage of .NET objects in script context
    + usage of script objects in .NET context
