@@ -13,4 +13,4 @@ Main features:
    + usage of .NET objects in script context
    + usage of script objects in .NET context
  + serialization/deserialization of program state:
-   + example: you can save the state of program and continue execution on another computer
+   + (you can save the state of program and continue execution on another computer)
