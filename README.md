@@ -8,7 +8,8 @@ Main features:
  + .NET version independent:
    + .NET 2.0 or higher
    + Silverlight 2.0 or higher
-   + .NET CF / .NET core / .NET micro framework
+   + PCL library
+   + .NET CF / .NET core
  + .NET interoperability :
    + usage of .NET objects in script context
    + usage of script objects in .NET context
