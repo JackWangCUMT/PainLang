@@ -1,4 +1,4 @@
-# PainLanguage
+# PainLang
 PainLanguage is a dynamic scripting language written in .NET
 
 Main features:
