@@ -30,11 +30,12 @@ new PainCompiler().Compile(" substring(round(33.3333,2)+'ABC',0,6) ").Eval();
 ```
  + Function definition:
 ```
-new PainCompiler().Compile(
-"def increment(a): \n" +
-"  b = a + 1 \n" +
-"  return b \n" +
-"return increment(10)").Eval();
+new PainCompiler().Compile(@"
+def increment(a): 
+  b = a + 1 
+  return b 
+return increment(10)
+").Eval();
 # result is 11
 ```
  
