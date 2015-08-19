@@ -18,6 +18,6 @@ Welcome to the home page of PainLang, a dynamic scripting language written in .N
 
 ##Examples
 
-new PainCompiler().Compile(" return 1+3 ").Eval(); 
-// result is 4
+ + `new PainCompiler().Compile(" return 1+3 ").Eval(); // result is 4`
+
 
