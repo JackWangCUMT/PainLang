@@ -87,7 +87,13 @@ return obj.Sum(3)+obj.a
 ").Eval();
 # result is 7
 ```
- 
- 
-
+ + .NET interoperability example:
+```
+Dictionary<String,Object> variables = new Dictionary<String,Object>();
+variables["A"] = "Test string";
+new PainCompiler().Compile(@"
+return '!'+A+'!'
+").Eval(variables);
+# result is '!Test string!'
+```
 
