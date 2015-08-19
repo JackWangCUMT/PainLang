@@ -19,13 +19,18 @@ Welcome to the home page of PainLang, a dynamic scripting language written in .N
 ##Examples
 
  + Basic usage:
-   + `new PainCompiler().Compile(" return 1+3 ").Eval(); // result is 4`
+`new PainCompiler().Compile(" return 1+3 ").Eval();`
+`# result is 4`
  + Usage of global functions:
-   + `new PainCompiler().Compile(" substring(round(33.3333,2)+'ABC',0,6) ").Eval(); // result is 33.33A`
+`new PainCompiler().Compile(" substring(round(33.3333,2)+'ABC',0,6) ").Eval();`
+`# result is 33.33A`
  + Function definition:
-   + `def hhhh(a):
-  a = 1 + h.getdate()
-  return a`
+`new PainCompiler().Compile(`
+`"def increment(a): \n" +`
+`"  b = a + 1 \n" +`
+`"  return b \n" +`
+`"return increment(10)").Eval();`
+`# result is 11`
  
 
 
