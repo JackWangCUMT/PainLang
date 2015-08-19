@@ -83,9 +83,9 @@ class TestClass():
   def Sum(c):
     return this.a + this.b + c
 obj = TestClass()
-return obj.Sum(3)
+return obj.Sum(3)+obj.a
 ").Eval();
-# result is 6
+# result is 7
 ```
  
  
