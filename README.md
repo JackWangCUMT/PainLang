@@ -1,5 +1,5 @@
-# PainLang
-PainLan is a dynamic scripting language written in .NET
+# PainLang (v0.8)
+Welcome to the home page of PainLan, a dynamic scripting language written in .NET
 
 Main features:
  + .NET interoperability:
@@ -12,5 +12,3 @@ Main features:
    + .NET CF / .NET core
  + serialization/deserialization of program state:
    + possibility to save the state of the program and continue execution later or on another computer
-
-Current version is 0.9
