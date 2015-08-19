@@ -38,9 +38,19 @@ elif 100 < 90:
 elif 100 < 101:
   return 'This is true..'
 else
-  return 'This will never happen' 
+  return '..' 
 ").Eval();
 # result is 'This is true..'
+```
+ + While statement:
+```
+new PainCompiler().Compile(@"
+i = 0
+while i < 100:
+  i = i + 1
+return i
+").Eval();
+# result is 100
 ```
  + Function definition:
 ```
