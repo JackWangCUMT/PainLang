@@ -21,12 +21,26 @@ Welcome to the home page of PainLang, a dynamic scripting language written in .N
  + Basic usage:
 ```
 new PainCompiler().Compile(" return 1+3 ").Eval();
-# *result is 4*
+# result is 4
 ```
  + Usage of global functions:
 ```
-new PainCompiler().Compile(" substring(round(33.3333,2)+'ABC',0,6) ").Eval();
-# *result is 33.33A*
+new PainCompiler().Compile(" substring( round(33.3333, 2) + 'ABC', 0, 6) ").Eval();
+# result is 33.33A
+```
+ + Conditional statements:
+```
+new PainCompiler().Compile(@"
+if 100 < 10:
+  return 'Not true..'
+elif 100 < 90:
+  return 'Also not true..'
+elif 100 < 101:
+  return 'This is true..'
+else
+  return 'This will never happen' 
+").Eval();
+# result is 'This is true..'
 ```
  + Function definition:
 ```
@@ -36,8 +50,34 @@ def increment(a):
   return b 
 return increment(10)
 ").Eval();
-# *result is 11*
+# result is 11
 ```
+ + Try / catch:
+```
+new PainCompiler().Compile(@"
+error = null
+try:
+  throw 'Error!'
+catch (ex):
+  error = ex
+return error.Message
+").Eval();
+# result is 'Error!'
+```
+ + Classes:
+```
+new PainCompiler().Compile(@"
+class TestClass():
+  a = 1
+  b = 2
+  def Sum(c):
+    return this.a + this.b + c
+obj = TestClass()
+return obj.Sum(3)
+").Eval();
+# result is 6
+```
+ 
  
 
 
