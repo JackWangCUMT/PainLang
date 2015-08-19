@@ -23,6 +23,7 @@ Welcome to the home page of PainLang, a dynamic scripting language written in .N
 `new PainCompiler().Compile(" return 1+3 ").Eval();`
 
 `# result is 4`
+
  + Usage of global functions:
 `new PainCompiler().Compile(" substring(round(33.3333,2)+'ABC',0,6) ").Eval();`
 `# result is 33.33A`
