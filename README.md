@@ -14,4 +14,5 @@ Welcome to the home page of PainLang, a dynamic scripting language written in .N
    + possibility to save the state of the program and continue execution later or on another computer
 
 ## Performance
- ~22808 lines/second (tests were taken on laptop with Intel Core i5-3210M@2.50Ghz processor)
+ ~22808 lines/second 
+ (tests were taken on laptop with Intel Core i5-3210M@2.50Ghz processor)
