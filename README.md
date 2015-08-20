@@ -1,5 +1,5 @@
 # PainLang (v0.8)
-Welcome to the home page of PainLang, a dynamic scripting language written in .NET
+Welcome to the home page of PainLang, a dynamic scripting language written in .NET. It is written entirely in plain C# (without DLR or Reflection.Emit).
 
 ## Main language features
  + .NET interoperability
