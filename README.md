@@ -31,6 +31,7 @@ new PainCompiler().Compile(" return substring( round(33.3333, 2) + 'ABC', 0, 6) 
  + Conditional statements:
 ```
 new PainCompiler().Compile(@"
+
 if 100 < 10:
   return 'Not true..'
 elif 100 < 90:
@@ -39,44 +40,52 @@ elif 100 < 101:
   return 'This is true..'
 else:
   return '..' 
+  
 ").Eval();
 # result is 'This is true..'
 ```
  + While statement:
 ```
 new PainCompiler().Compile(@"
+
 i = 0
 while i < 100:
   i = i + 1
 return i
+
 ").Eval();
 # result is 100
 ```
  + Function definition:
 ```
 new PainCompiler().Compile(@"
+
 def increment(a): 
   b = a + 1 
   return b 
 return increment(10)
+
 ").Eval();
 # result is 11
 ```
  + Try / catch:
 ```
 new PainCompiler().Compile(@"
+
 error = null
 try:
   throw 'Error!'
 catch (ex):
   error = ex
 return error.Message
+
 ").Eval();
 # result is 'Error!'
 ```
  + Classes:
 ```
 new PainCompiler().Compile(@"
+
 class TestClass():
   a = 1
   b = 2
@@ -84,6 +93,7 @@ class TestClass():
     return this.a + this.b + c
 obj = TestClass()
 return obj.Sum(3)+obj.a
+
 ").Eval();
 # result is 7
 ```
