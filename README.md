@@ -102,6 +102,7 @@ return obj.Sum(3)+obj.a
 ```
 Dictionary<String,Object> variables = new Dictionary<String,Object>();
 variables["A"] = "Test string";
+
 new PainCompiler().Compile(@"
 
 return '!' + A.Length + A.Substring(5,6) + '!'
