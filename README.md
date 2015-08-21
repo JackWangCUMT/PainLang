@@ -28,7 +28,7 @@ new PainCompiler().Compile(" return 1 + 3 ").Eval();
 ```
  + Usage of global functions:
 ```
-new PainCompiler().Compile(" return substring( round(33.3333, 2) + 'ABC', 0, 6) ").Eval();
+new PainCompiler().Compile(" return substring(round(33.3333, 2) + 'ABC', 0, 6) ").Eval();
 
 # result is 33.33A
 ```
