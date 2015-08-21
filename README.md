@@ -10,6 +10,7 @@ Welcome to the home page of PainLang, a dynamic scripting language written in .N
    + Silverlight 2.0 or higher
    + PCL library
    + .NET CF / .NET core
+ + possibility of pausing script execution
  + serialization/deserialization of program state
    + possibility to save the state of the program and continue execution later or on another computer
  + written entirely in plain C# (without DLR or Reflection.Emit)
