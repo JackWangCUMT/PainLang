@@ -105,9 +105,9 @@ variables["A"] = "Test string";
 
 new PainCompiler().Compile(@"
 
-return '!' + A.Length + A.Substring(5,6) + '!'
+return A.Length + ' ' + A.Substring(5,6) 
 
 ").Eval(variables);
-# result is '!11string!'
+# result is '11 string'
 ```
 
