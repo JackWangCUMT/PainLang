@@ -22,7 +22,7 @@ Welcome to the home page of PainLang, a dynamic scripting language written in .N
 
  + Basic usage:
 ```
-new PainCompiler().Compile(" return 1+3 ").Eval();
+new PainCompiler().Compile(" return 1 + 3 ").Eval();
 
 # result is 4
 ```
