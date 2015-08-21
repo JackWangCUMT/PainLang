@@ -103,8 +103,8 @@ return obj.Sum(3)+obj.a
 Dictionary<String,Object> variables = new Dictionary<String,Object>();
 variables["A"] = "Test string";
 new PainCompiler().Compile(@"
-return '!'+A+'!'
+return '!' + A.Length + A.Substring(5,6) + '!'
 ").Eval(variables);
-# result is '!Test string!'
+# result is '!11string!'
 ```
 
