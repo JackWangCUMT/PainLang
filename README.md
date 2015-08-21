@@ -22,11 +22,13 @@ Welcome to the home page of PainLang, a dynamic scripting language written in .N
  + Basic usage:
 ```
 new PainCompiler().Compile(" return 1+3 ").Eval();
+
 # result is 4
 ```
  + Usage of global functions:
 ```
 new PainCompiler().Compile(" return substring( round(33.3333, 2) + 'ABC', 0, 6) ").Eval();
+
 # result is 33.33A
 ```
  + Conditional statements:
@@ -43,6 +45,7 @@ else:
   return '..' 
   
 ").Eval();
+
 # result is 'This is true..'
 ```
  + While statement:
@@ -55,6 +58,7 @@ while i < 100:
 return i
 
 ").Eval();
+
 # result is 100
 ```
  + Function definition:
@@ -67,6 +71,7 @@ def increment(a):
 return increment(10)
 
 ").Eval();
+
 # result is 11
 ```
  + Try / catch:
@@ -81,6 +86,7 @@ catch (ex):
 return error.Message
 
 ").Eval();
+
 # result is 'Error!'
 ```
  + Classes:
@@ -96,6 +102,7 @@ obj = TestClass()
 return obj.Sum(3)+obj.a
 
 ").Eval();
+
 # result is 7
 ```
  + .NET interoperability example (using c# variable from PainLang):
@@ -108,6 +115,7 @@ new PainCompiler().Compile(@"
 return A.Length + ' ' + A.Substring(5,6) 
 
 ").Eval(variables);
+
 # result is '11 string'
 ```
  + .NET interoperability example (using PainLang method in C#):
@@ -122,5 +130,6 @@ def method1(a,b,c):
 
 ").CreateContext();
 Object result = context.InvokeMethod("method1", new object [] { 0, "Result1", "Result2" });
+
 # result is 'Result2'
 ```
