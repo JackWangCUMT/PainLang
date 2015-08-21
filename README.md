@@ -2,6 +2,7 @@
 Welcome to the home page of PainLang, a dynamic scripting language written in .NET. 
 
 ## Main language features
+ + library is written entirely in plain C# (without DLR or Reflection.Emit)
  + .NET interoperability
    + possibility to use .NET objects in script context
    + objects created in script are available in .NET context
@@ -13,7 +14,6 @@ Welcome to the home page of PainLang, a dynamic scripting language written in .N
  + possibility of pausing script execution
  + serialization/deserialization of program state
    + possibility to save the state of the program and continue execution later or on another computer
- + written entirely in plain C# (without DLR or Reflection.Emit)
 
 ## Performance
  22808 lines/second on single core (Intel Core i5-3210M@2.50Ghz)
