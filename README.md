@@ -22,15 +22,15 @@ Welcome to the home page of PainLang, a dynamic scripting language written in .N
 
  + Basic usage:
 ```
-new PainCompiler().Compile(" return 1 + 3 ").Eval();
+new PainCompiler().Compile(" return 1 + 3.1 ").Eval();
 
-# result is 4
+# result is 4.1
 ```
  + Usage of global functions:
 ```
 new PainCompiler().Compile(" return substring(round(33.3333, 2) + 'ABC', 0, 6) ").Eval();
 
-# result is 33.33A
+# result is '33.33A'
 ```
  + Conditional statements:
 ```
