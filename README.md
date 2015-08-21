@@ -98,7 +98,7 @@ return obj.Sum(3)+obj.a
 ").Eval();
 # result is 7
 ```
- + .NET interoperability example:
+ + .NET interoperability example (using c# variable from PainLang):
 ```
 Dictionary<String,Object> variables = new Dictionary<String,Object>();
 variables["A"] = "Test string";
@@ -110,4 +110,17 @@ return A.Length + ' ' + A.Substring(5,6)
 ").Eval(variables);
 # result is '11 string'
 ```
+ + .NET interoperability example (using PainLang method in C#):
+```
+PainContext context = new PainCompiler().Compile(@"
 
+def method1(a,b,c):
+  if a:
+    return b
+  else:
+    return c
+
+").CreateContext();
+Object result = context.InvokeMethod("method1", new object [] { 0, "Result1", "Result2" });
+# result is 'Result2'
+```
