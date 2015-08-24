@@ -15,7 +15,7 @@ Welcome to the home page of PainLang, a dynamic scripting language written in .N
  + serialization/deserialization of program state
    + possibility to save the state of the program and continue execution later or on another computer
 
-## Limitations
+## Known limitations
  + one statement per line
  + whitespaces at the left of statements are significant (indentation level, like in python)
 
