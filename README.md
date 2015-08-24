@@ -15,6 +15,10 @@ Welcome to the home page of PainLang, a dynamic scripting language written in .N
  + serialization/deserialization of program state
    + possibility to save the state of the program and continue execution later or on another computer
 
+## Limitations
+ + one statement per line
+ + whitespaces at the left of statements are significant (indentation level, like in python)
+
 ## Performance
  22808 lines/second on single core (Intel Core i5-3210M@2.50Ghz)
 
